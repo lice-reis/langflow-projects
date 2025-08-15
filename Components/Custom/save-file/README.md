@@ -1,43 +1,47 @@
-# Langflow Custom Components
+# Save File Component for Langflow
 
-Este repositório contém componentes customizados para o Langflow, uma plataforma de desenvolvimento de fluxos de IA.
+Um componente customizado para o Langflow que permite salvar arquivos de diferentes formatos durante a execução de fluxos.
 
-## Componentes Disponíveis
+## Características
 
-### Save File Component
+- ✅ Suporte para múltiplos formatos de arquivo (JSON, CSV, TXT)
+- ✅ Configuração flexível de caminhos de saída
+- ✅ Integração nativa com o Langflow
+- ✅ Tratamento de erros robusto
+- ✅ Interface limpa e intuitiva
 
-O componente **Save File** permite salvar arquivos de diferentes formatos (JSON, CSV, TXT) durante a execução de fluxos no Langflow.
+## Arquivos do Componente
 
-#### Características
-- Suporte para múltiplos formatos de arquivo
-- Configuração flexível de caminhos de saída
-- Integração nativa com o Langflow
-- Tratamento de erros robusto
+- `save_file_new.py` - **Componente principal** (versão atualizada e otimizada)
+- `CHANGELOG.md` - Histórico de mudanças e versões
 
-#### Arquivos do Componente
-- `file.py` - Implementação principal do componente
-- `save_file_new.py` - Versão atualizada do componente
-- `save_file_old.py` - Versão anterior para referência
-- `test_component.py` - Testes do componente
-- `test.json` - Arquivo de teste
-- `CHANGELOG.md` - Histórico de mudanças
+## Como Usar
 
-#### Como Usar
-1. Copie os arquivos do componente para a pasta `Components/Custom/` do seu projeto Langflow
-2. Reinicie o Langflow
-3. O componente aparecerá na lista de componentes customizados
+1. **Instalação**: Copie o arquivo `save_file_new.py` para a pasta `Components/Custom/` do seu projeto Langflow
+2. **Reiniciar**: Reinicie o Langflow para carregar o novo componente
+3. **Usar**: O componente aparecerá na lista de componentes customizados
 
-## Instalação
+## Configuração
 
-```bash
-git clone <seu-repositorio>
-cd "Langflow Project"
+O componente aceita os seguintes parâmetros:
+- **File Path**: Caminho onde o arquivo será salvo
+- **File Name**: Nome do arquivo (com extensão)
+- **Content**: Conteúdo a ser salvo no arquivo
+- **File Format**: Formato do arquivo (JSON, CSV, TXT)
+
+## Exemplo de Uso
+
+```python
+# O componente salva automaticamente o conteúdo no formato especificado
+# e retorna o caminho completo do arquivo salvo
 ```
 
-## Contribuição
+## Compatibilidade
 
-Sinta-se à vontade para contribuir com melhorias e novos componentes!
+- Langflow versão 0.5.0+
+- Python 3.8+
+- Sistemas: Windows, macOS, Linux
 
 ## Licença
 
-Este projeto está sob a licença MIT.
+Este componente está sob a licença MIT.

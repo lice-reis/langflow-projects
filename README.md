@@ -2,7 +2,7 @@
 
 Este repositório contém componentes customizados para o Langflow, uma plataforma de desenvolvimento de fluxos de IA.
 
-## Componentes Disponíveis
+## Componente Disponível
 
 ### Save File Component
 
@@ -15,23 +15,29 @@ O componente **Save File** permite salvar arquivos de diferentes formatos (JSON,
 - Tratamento de erros robusto
 
 #### Arquivos do Componente
-- `file.py` - Implementação principal do componente
-- `save_file_new.py` - Versão atualizada do componente
-- `save_file_old.py` - Versão anterior para referência
-- `test_component.py` - Testes do componente
-- `test.json` - Arquivo de teste
+- `save_file_new.py` - **Componente principal** (versão atualizada e otimizada)
 - `CHANGELOG.md` - Histórico de mudanças
 
 #### Como Usar
-1. Copie os arquivos do componente para a pasta `Components/Custom/` do seu projeto Langflow
+1. Copie o arquivo `save_file_new.py` para a pasta `Components/Custom/` do seu projeto Langflow
 2. Reinicie o Langflow
 3. O componente aparecerá na lista de componentes customizados
 
 ## Instalação
 
 ```bash
-git clone <seu-repositorio>
-cd "Langflow Project"
+git clone https://github.com/lice-reis/langflow-projects.git
+cd langflow-projects
+```
+
+## Estrutura do Projeto
+
+```
+Components/
+└── Custom/
+    └── save-file/
+        ├── save_file_new.py    # Componente principal
+        └── CHANGELOG.md        # Histórico de versões
 ```
 
 ## Contribuição
